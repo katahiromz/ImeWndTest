@@ -14,5 +14,6 @@ project(ImeWndTest CXX)
 # ImeWndTest.exe
 add_executable(ImeWndTest ImeWndTest.cpp)
 target_link_libraries(ImeWndTest comctl32 shlwapi imm32)
+target_compile_definitions(ImeWndTest PRIVATE UNICODE _UNICODE)
 
 ##############################################################################
